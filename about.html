@@ -1,13 +1,94 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us - Cedar Taste</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Us - Yalla Eat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 36px;
+                color: #222;
+            }
+
+        nav {
+            margin-top: 10px;
+        }
+
+            nav a {
+                text-decoration: none;
+                margin: 0 15px;
+                color: #333;
+                font-weight: bold;
+            }
+
+                nav a:hover {
+                    color: #e60000;
+                }
+
+        .about-section {
+            position: relative;
+            background-image: url('about-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+            .about-section::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+                border-radius: 10px;
+            }
+
+            .about-section h2,
+            .about-section p {
+                position: relative;
+                z-index: 1;
+            }
+
+            .about-section h2 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            .about-section p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>About Cedar Taste</h1>
+        <h1>About Yalla Eat</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -16,10 +97,18 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
+
+    <main class="about-section">
         <h2>Our Story</h2>
-        <p>Cedar Taste brings the rich flavors of Lebanon to your table. Family-owned and operated, we use traditional recipes and the freshest ingredients to create an unforgettable dining experience.</p>
+        <p>
+            At Yalla Eat, we’re not just serving chicken — we’re serving energy, flavor, and good vibes for students on the go.<br><br>
+            Born in front of the Lebanese University – Faculty of Technology, Yalla Eat was created with one mission: to be the go-to spot for students craving bold, juicy meals without breaking the bank. Whether you're powering through a study session or chilling with friends after class, our food is fast, flavorful, and full of attitude.<br><br>
+            From our signature Yalla Box to loaded wraps, saucy wings, and crispy bites — everything we serve is made with love, spice, and a whole lot of student spirit. The vibe? Urban, cozy, and Instagram-ready, with neon lights, comfy seats, and even charging spots for your devices.<br><br>
+            So grab it. Eat it. Yalla!<br>
+            This is more than a meal — it's a lifestyle.
+        </p>
     </main>
-    <footer>&copy; 2025 Cedar Taste</footer>
+
+    <footer>&copy; 2025 Yalla Eat</footer>
 </body>
 </html>
