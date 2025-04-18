@@ -1,14 +1,24 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cedar Taste - Home</title>
+    <title>Yalla Eat - Home</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
         }
 
         header, footer {
@@ -25,10 +35,11 @@
         }
 
         .hero {
-            background-image: url('homepage.jpg');
+            background-image: url('home.jpg');
             background-size: cover;
             background-position: center;
-            height: 500px;
+            background-repeat: no-repeat;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -39,16 +50,20 @@
 
         main {
             padding: 2em;
-            text-align:center;
+            text-align: center;
+            flex: 1;
+            background-color: #f8f8f8;
+            color: #333;
         }
-        footer{
-            font-size:0.9em;
+
+        footer {
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cedar Taste</h1>
+        <h1>Yalla Eat</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -57,10 +72,13 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <div class="hero">Welcome to Cedar Taste</div>
+
+    <div class="hero">Welcome to Yalla Eat</div>
+
     <main>
         <p>Authentic Lebanese cuisine made with love. Explore our menu and order your favorites!</p>
     </main>
+
     <footer>&copy; 2025 Cedar Taste</footer>
 </body>
 </html>
