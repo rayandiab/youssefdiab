@@ -1,140 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yalla Eat - Lebanese Restaurant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Tajawal', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fffaf5;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lebanese Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffaf5;
+        }
 
-    header.main-header {
-      background: url('restaurant-bg.jpg') center/cover no-repeat;
-      color: #ffe9d6;
-      padding: 100px 20px;
-      text-align: center;
-      font-size: 2.5em;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
+        header {
+            background-color: #fbe9e7;
+            padding: 50px 20px;
+            text-align: center;
+        }
 
-    header.sub-header h1 {
-      color: #ffe9d6;
-      margin: 0;
-      padding: 30px 20px;
-      font-size: 2.2em;
-      text-align: center;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
+        header h1,
+        header span {
+            color: #8B0000;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
 
-    nav {
-      background-color: #8B0000;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      padding: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+        nav {
+            background-color: #8B0000;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      background-color: #a52a2a;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: #a52a2a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
 
-    nav a:hover {
-      background-color: #5c0000;
-    }
+        nav a:hover {
+            background-color: #5c0000;
+        }
 
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
 
-    section h2 {
-      color: #8B0000;
-      margin-bottom: 20px;
-    }
+        section h2 {
+            color: #8B0000;
+            margin-bottom: 20px;
+        }
 
-    .menu-item {
-      margin-bottom: 20px;
-    }
+        .menu-item {
+            margin-bottom: 20px;
+        }
 
-    .menu-item img {
-      width: 200px;
-      height: auto;
-      border-radius: 10px;
-    }
+        .menu-item img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    footer {
-      background-color: #8B0000;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
 
-  <header class="main-header">
-    Welcome to Our Lebanese Restaurant
-  </header>
+    <header>
+        <span>Welcome to Our Lebanese Restaurant</span>
+    </header>
+    <header>
+        <h1>About Yalla Eat</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-  <header class="sub-header">
-    <h1>About Yalla Eat</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="menu.html">Menu</a>
-      <a href="order.html">Order</a>
-      <a href="contact.html">Contact</a>
+        <a href="#chicken">Chicken</a>
+        <a href="#sandwiches">Sandwiches</a>
+        <a href="#appetizers">Appetizers</a>
+        <a href="#meals">Meals</a>
+        <a href="#beverages">Beverages</a>
+        <a href="#extra">Extra</a>
+        <a href="#rice">Rice</a>
+        <a href="#hookah">Hookah</a>
     </nav>
-  </header>
 
-  <section id="about">
-    <h2>Who We Are</h2>
-    <p>At Yalla Eat, we bring the authentic taste of Lebanon to your plate. Our dishes are made with passion, tradition, and the freshest ingredients.</p>
-  </section>
+    <main>
+        <section id="chicken">
+            <h2>Chicken</h2>
+            <div class="menu-item">
+                <img src="">
+                <p>Charcoal grilled Chicken</p>
+                <p>Marinated Charcoal-grilled chicken, Chilli Sauce, Garlic Sauce, Pickles, Fries</p>
+                <p>10$</p>
+            </div>
+            <!-- ... Other chicken items ... -->
+        </section>
 
-  <section id="menu">
-    <h2>Featured Dishes</h2>
-    <div class="menu-item">
-      <img src="chicken-shawarma.jpg" alt="Chicken Shawarma" />
-      <p>Chicken Shawarma - $8</p>
-    </div>
-    <div class="menu-item">
-      <img src="hummus.jpg" alt="Hummus" />
-      <p>Classic Hummus - $5</p>
-    </div>
-  </section>
+        <section id="sandwiches">
+            <h2>Sandwiches</h2>
+            <div class="menu-item">
+                <img src="">
+                <p>Grilled chicken sandwich large</p>
+                <p>Charcoal-grilled chicken sandwich, Lebanese bread, Chilli Sauce, Garlic Sauce, Pickles</p>
+                <p>5$</p>
+            </div>
+            <!-- ... Other sandwich items ... -->
+        </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: +961 70 000 000</p>
-    <p>Email: info@yallaeat.com</p>
-    <p>Location: Beirut, Lebanon</p>
-  </section>
+        <section id="appetizers">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <img src="">
+                <p>Fries plate</p>
+                <p>Fries, Salt, Ketchup</p>
+                <p>3$</p>
+            </div>
+            <!-- ... Other appetizer items ... -->
+        </section>
 
-  <footer>
-    &copy; 2025 Yalla Eat. All rights reserved.
-  </footer>
+        <section id="meals">
+            <h2>Meals</h2>
+            <div class="menu-item">
+                <img src="">
+                <p>Chicken plate large</p>
+                <p>Charcoal-grilled chicken sandwich, Lebanese Bread, Chilli Sauce, Garlic Sauce, Pickles, Fries, Pepsi Can</p>
+                <p>7$</p>
+            </div>
+            <!-- ... Other meals ... -->
+        </section>
+
+        <section id="beverages">
+            <h2>Beverages</h2>
+            <div class="menu-item">
+                <img src="">
+                <p>Pepsi</p>
+                <p>0.70$</p>
+            </div>
+            <!-- ... Other beverages ... -->
+        </section>
+
+        <section id="extra">
+            <h2>Extra</h2>
+            <div class="menu-item">
+                <img src="">
+                <p>Garlic Dip</p>
+                <p>0.50$</p>
+            </div>
+            <!-- ... Other extras ... -->
+        </section>
+
+        <section id="rice">
+            <h2>Rice</h2>
+            <div class="menu-item">
+                <img src="">
+                <p>Plate of rice</p>
+                <p>2$</p>
+            </div>
+            <!-- ... Other rice dishes ... -->
+        </section>
+
+        <section id="hookah">
+            <h2>Hookah</h2>
+            <div class="menu-item">
+                <img src="">
+                <p>Apple hookah 3$</p>
+                <p>Lemon and Mint hookah 3$</p>
+                <p>Grape hookah 3$</p>
+                <p>Hookah flavor 4$</p>
+                <p>Nakha hookah 4$</p>
+                <p>Ajami hookah 4$</p>
+                <p>Change Ras 2$</p>
+                <p>Nabrish plastic 1$</p>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
